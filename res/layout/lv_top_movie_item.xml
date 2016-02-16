@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="The Avengers"
+        android:id="@+id/tvTitle"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/iv_movie"
+        android:layout_toEndOf="@+id/iv_movie" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Some Short SummarySome Short SummarySome Short SummarySome Short SummarySome Short Summary"
+        android:maxLines="4"
+        android:minLines="4"
+        android:id="@+id/tvDescription"
+
+        android:layout_alignBottom="@+id/iv_movie"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/iv_movie"
+        android:layout_toEndOf="@+id/iv_movie" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:id="@+id/iv_movie"
+        android:minWidth="100dp"
+        android:minHeight="150dp" />
+</RelativeLayout>

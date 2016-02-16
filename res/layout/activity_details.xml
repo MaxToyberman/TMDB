@@ -1,0 +1,72 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:fitsSystemWindows="true"
+    android:id="@+id/relative_layout"
+    tools:context="com.toyberman.tmdb.DetailsActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView android:text="Movie name" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="15dp"
+        android:id="@+id/tv_movie_name" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:paddingBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:numStars="10"
+        android:layout_below="@+id/tv_movie_name"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:layout_below="@+id/ratingBar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tv_summary"
+        android:scrollbars = "vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:fadeScrollbars="true"
+        android:paddingTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageView" />
+
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton android:id="@+id/btn_trailer"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center" android:layout_margin="@dimen/fab_margin"
+
+        android:src="@android:drawable/ic_media_play" />
+</android.support.design.widget.CoordinatorLayout>

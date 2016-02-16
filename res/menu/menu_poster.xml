@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.toyberman.tmdb.PosterActivity">
+    <item android:id="@+id/poster_instructions" android:title="@string/instructions"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/Posters" android:title="Posters"
+        android:orderInCategory="100" app:showAsAction="always" />
+    <item android:id="@+id/Backdrops" android:title="Backdrops"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+</menu>
